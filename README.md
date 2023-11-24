@@ -1,5 +1,7 @@
 INTEGRANTES DO GRUPO:
+
 RM550610 - Fabio Hideki
+
 RM550260 - Pedro Moura
 
 A saúde enfrenta desafios significativos, incluindo longos períodos de espera e falta de compreensão dos sintomas pelos pacientes. A TechCare surge como uma solução inovadora, 
