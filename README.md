@@ -26,7 +26,7 @@ por profissionais de saúde.
 
 LINK DO VÍDEO: https://youtu.be/gW0BXeaGATE
 
-LINK WOKWI:  https://wokwi.com/projects/382300374926642177
+LINK WOKWI:  https://wokwi.com/projects/382304250477380609
 
 
 ![wowki](https://github.com/Fabio-e-Pedro/GS-EDGE/assets/127514461/77d6a31c-4e7d-4128-a88b-227ecb07ba55)
