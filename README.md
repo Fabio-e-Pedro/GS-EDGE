@@ -1,3 +1,7 @@
+INTEGRANTES DO GRUPO:
+RM550610 - Fabio Hideki
+RM550260 - Pedro Moura
+
 A saúde enfrenta desafios significativos, incluindo longos períodos de espera e falta de compreensão dos sintomas pelos pacientes. A TechCare surge como uma solução inovadora, 
 integrando inteligência artificial (IA) para melhorar a interação entre pacientes e profissionais de saúde. O aplicativo permite que pacientes enviem informações sintomáticas, 
 recebendo diagnósticos instantâneos e recomendações especializadas. Os médicos utilizam o TechCare para compartilhar dados clínicos, recebendo assistência na detecção precoce 
@@ -5,6 +9,7 @@ de doenças com base em algoritmos de aprendizado de máquina avançados. A meto
 precisos ao longo do tempo. O TechCare destaca-se pela rapidez e precisão no diagnóstico, reduzindo a ansiedade dos pacientes e possibilitando decisões informadas. 
 Para os médicos, a IA é uma aliada valiosa, proporcionando insights aprimorados. A abordagem inovadora do TechCare busca resolver desafios existentes e transformar 
 fundamentalmente a gestão da saúde, tornando-a mais ágil, precisa e acessível. 
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 O objetivo do nosso código é criar um sistema de monitoramento de temperatura e umidade, com ênfase na aplicação na área da saúde. Ele utiliza um sensor DHT22 para medir esses 
@@ -17,7 +22,7 @@ fora dos limites normais, como febre ou hipotermia, e acionar alertas visuais co
 Assim, a finalidade é proporcionar um sistema de monitoramento automatizado que possa contribuir para a detecção precoce de condições de saúde anormais e facilitar a tomada de decisões informadas 
 por profissionais de saúde. 
 
-
+LINK DO VÍDEO: https://youtu.be/gW0BXeaGATE
 LINK WOKWI:  https://wokwi.com/projects/382300374926642177
 
 
