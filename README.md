@@ -23,6 +23,7 @@ Assim, a finalidade é proporcionar um sistema de monitoramento automatizado que
 por profissionais de saúde. 
 
 LINK DO VÍDEO: https://youtu.be/gW0BXeaGATE
+
 LINK WOKWI:  https://wokwi.com/projects/382300374926642177
 
 
