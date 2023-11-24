@@ -5,6 +5,7 @@
 // Bibliotecas necessárias
 #include <WiFi.h>
 #include "DHTesp.h"
+#include "ThingSpeak.h"
 
 // Definições de pinos e constantes
 const int DHT_PIN = 15; // Pino conectado ao sensor DHT22
@@ -12,6 +13,9 @@ const int GREEN_PIN = 12; // Pino para LED verde
 const int RED_PIN = 13; // Pino para LED vermelho
 const char* WIFI_NAME = "Wokwi-GUEST"; // Nome da rede Wi-Fi
 const char* WIFI_PASSWORD = ""; // Senha da rede Wi-Fi
+const int myChannelNumber = 2346705; // Número do canal ThingSpeak
+const char* myApiKey = "SGFL6TWXNB6KV1ZE"; // Chave do canal ThingSpeak
+const char* server = "api.thingspeak.com"; // Servidor ThingSpeak
 
 // Inicializa o sensor DHT e o cliente Wi-Fi
 DHTesp dhtSensor;
@@ -41,11 +45,17 @@ void setup() {
   dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
   pinMode(RED_PIN, OUTPUT);
   pinMode(GREEN_PIN, OUTPUT);
+  ThingSpeak.begin(client);
 }
+
 
 void loop() {
   // Obtém temperatura e umidade do sensor DHT
   TempAndHumidity data = dhtSensor.getTempAndHumidity();
+  
+  // Define os campos do ThingSpeak com os valores lidos
+  ThingSpeak.setField(1, data.temperature);
+  ThingSpeak.setField(2, data.humidity);
   
   // Verifica se a temperatura está fora do intervalo normal
   if (data.temperature > 37 && data.humidity < 40) {
@@ -77,9 +87,20 @@ void loop() {
     digitalWrite(RED_PIN, LOW);
     digitalWrite(GREEN_PIN, HIGH);
   }
-
+  
+  // Envia os dados para o ThingSpeak
+  int x = ThingSpeak.writeFields(myChannelNumber, myApiKey);
+  
+  // Exibe os valores lidos e o status do envio
   Serial.println("Temperatura: " + String(data.temperature, 2) + "°C");
   Serial.println("Umidade da sala: " + String(data.humidity, 1) + "%");
+  
+  // Verifica se o envio foi bem-sucedido
+  if (x == 200) {
+    Serial.println("Dados enviados com sucesso");
+  } else {
+    Serial.println("Erro no envio: " + String(x));
+  }
   Serial.println("---");
 
   delay(10000); // Aguarda 10 segundos antes da próxima leitura/envio
