@@ -20,3 +20,5 @@ por profissionais de saúde.
 
 LINK WOKWI:  https://wokwi.com/projects/382300374926642177
 
+
+![wowki](https://github.com/Fabio-e-Pedro/GS-EDGE/assets/127514461/77d6a31c-4e7d-4128-a88b-227ecb07ba55)
